@@ -1925,7 +1925,7 @@ case $($OPENSSL version) in
     "OpenSSL 0"*|"OpenSSL 1.0"*) :;;
     *)
         O_CLI="$O_CLI -cipher ALL@SECLEVEL=0"
-        O_SRV="$O_SRV -cipher ALL@SECLEVEL=0"
+        O_SRV="$O_SRV -cipher NULL,ALL@SECLEVEL=0"
         ;;
 esac
 
